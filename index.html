@@ -2,16 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit-Brust</title>
-    <!-- Daisy ui and tailwind link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit-Brust</title>
+  <!-- Daisy ui and tailwind link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fontawesome link -->
+  <script src="https://kit.fontawesome.com/8cdef2cb71.js" crossorigin="anonymous"></script>
+  <!-- External font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  
+  <style>
+    .lato-font{
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 </head>
 
-<body>
+<body class="lato-font">
+  <!-- header section -->
+  <header>
+    <!-- navber section -->
+    <nav class="container mx-auto">
+      <div class="navbar bg-[#F85559] rounded-[500px] lg:p-3">
+        <div class="navbar-start hidden lg:flex justify-between">
+          <ul class="menu menu-horizontal px-1 text-[#FFF] font-medium">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div >
+          <img src="images/logo.png" alt="">
+          <h1 class="text-lg lg:text-3xl text-[#121212] lg:text-[#FFF] font-bold ml-3">Fruit Burst</h1>
+        </div>
+        <!-- serchber -->
+        <div class="">
+          <input type="text" placeholder="Search here " class="input rounded-3xl  w-full max-w-xs" />
+          
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
