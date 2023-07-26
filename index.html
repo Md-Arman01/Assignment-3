@@ -38,8 +38,8 @@
   <!-- header section -->
   <header>
     <!-- navber section -->
-    <nav class="container mx-auto my-8">
-      <div class="navbar bg-[#F85559] rounded-[500px] lg:p-3">
+    <nav class="container mx-auto my-4 lg:my-8">
+      <div class="navbar lg:bg-[#F85559] rounded-[500px] lg:py-3 lg:px-6">
         <div class="navbar-start hidden lg:flex justify-between">
           <ul class="menu menu-horizontal px-1 text-[#FFF] font-medium">
             <li><a>Home</a></li>
@@ -63,28 +63,28 @@
               <li><a>All Fruits</a></li>
             </ul>
           </div>
-          <img src="images/logo.png" alt="">
-          <h1 class="text-lg lg:text-3xl text-[#121212] lg:text-[#FFF] font-bold ml-3">Fruit Burst</h1>
+          <img class="w-7 lg:w-10 " src="images/logo.png" alt="">
+          <h1 class="text-lg lg:text-3xl text-[#121212] lg:text-[#FFF] font-extrabold ml-3">Fruit Burst</h1>
         </div>
-        <!-- serchber -->
-        <div class="">
-          <input type="text" placeholder="Search here " class="input rounded-3xl  w-full max-w-xs" />
-
+        <!-- Search ber -->
+        <div class="relative hidden lg:block">
+          <input type="text" placeholder="Search here " class="input rounded-3xl w-80" />
+          <span class="absolute right-5 top-3"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></span>
         </div>
       </div>
     </nav>
     <!-- banner section -->
-    <section class="container  mx-auto">
-      <div class="carousel h-[600px] rounded-lg">
+    <section class="lg:container mx-auto px-4 lg:px-0">
+      <div class="carousel lg:h-[600px] w-full  mx-auto rounded-lg ">
         <!-- 1st slide -->
         <div id="slide1" class="carousel-item relative w-full">
           <div class="hero " style="background-image: url(./images/banner1.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
-                <h1 class="mb-5 text-5xl text-[#FFF] font-extrabold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5 text-[#FFF] font-medium">We supply highly quality organic products</p>
-                <button class="bg-[#F85559] border-none text-[#FFF] px-5 py-3 rounded-lg font-">Shop Now</button>
+                <h1 class="mb-2 lg:mb-5 text-3xl lg:text-5xl text-[#FFF] font-extrabold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm lg:text-base text-[#FFF] font-medium">We supply highly quality organic products</p>
+                <button class="bg-[#F85559] border-none text-[#FFF] px-5 py-3 rounded-lg font-semibold">Shop Now</button>
               </div>
             </div>
           </div>
@@ -100,9 +100,9 @@
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
-                <h1 class="mb-5 text-5xl text-[#FFF] font-extrabold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5 text-[#FFF] font-medium">We supply highly quality organic products</p>
-                <button class="bg-[#F85559] border-none text-[#FFF] px-5 py-3 rounded-lg font-">Shop Now</button>
+                <h1 class="mb-2 lg:mb-5 text-3xl lg:text-5xl text-[#FFF] font-extrabold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm lg:text-base text-[#FFF] font-medium">We supply highly quality organic products</p>
+                <button class="bg-[#F85559] border-none text-[#FFF] px-5 py-3 rounded-lg font-semibold">Shop Now</button>
               </div>
             </div>
           </div>
@@ -118,9 +118,9 @@
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
-                <h1 class="mb-5 text-5xl text-[#FFF] font-extrabold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5 text-[#FFF] font-medium">We supply highly quality organic products</p>
-                <button class="bg-[#F85559] border-none text-[#FFF] px-5 py-3 rounded-lg font-">Shop Now</button>
+                <h1 class="mb-2 lg:mb-5 text-3xl lg:text-5xl text-[#FFF] font-extrabold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm lg:text-base text-[#FFF] font-medium">We supply highly quality organic products</p>
+                <button class="bg-[#F85559] border-none text-[#FFF] px-5 py-3 rounded-lg font-semibold">Shop Now</button>
               </div>
             </div>
           </div>
@@ -136,9 +136,9 @@
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
-                <h1 class="mb-5 text-5xl text-[#FFF] font-extrabold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5 text-[#FFF] font-medium">We supply highly quality organic products</p>
-                <button class="bg-[#F85559] border-none text-[#FFF] px-5 py-3 rounded-lg font-">Shop Now</button>
+                <h1 class="mb-2 lg:mb-5 text-3xl lg:text-5xl text-[#FFF] font-extrabold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm lg:text-base text-[#FFF] font-medium">We supply highly quality organic products</p>
+                <button class="bg-[#F85559] border-none text-[#FFF] px-5 py-3 rounded-lg font-semibold">Shop Now</button>
               </div>
             </div>
           </div>
@@ -151,6 +151,8 @@
 
       </div>
     </section>
+
+    
   </header>
 
   <main>
