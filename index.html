@@ -38,8 +38,8 @@
   <!-- header section -->
   <header>
     <!-- navber section -->
-    <nav class="container mx-auto my-4 lg:my-8">
-      <div class="navbar lg:bg-[#F85559] rounded-[500px] lg:py-3 lg:px-6">
+    <nav class="container mx-auto my-4 lg:my-8 md:px-4 lg:px-0">
+      <div class="navbar md:bg-[#F85559] lg:bg-[#F85559] rounded-[500px] lg:py-3 lg:px-6">
         <div class="navbar-start hidden lg:flex justify-between">
           <ul class="menu menu-horizontal px-1 text-[#FFF] font-medium">
             <li><a>Home</a></li>
@@ -67,15 +67,15 @@
           <h1 class="text-lg lg:text-3xl text-[#121212] lg:text-[#FFF] font-extrabold ml-3">Fruit Burst</h1>
         </div>
         <!-- Search ber -->
-        <div class="relative hidden lg:block">
-          <input type="text" placeholder="Search here " class="input rounded-3xl w-80" />
-          <span class="absolute right-5 top-3"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></span>
+        <div class="relative hidden md:block">
+          <input type="text" placeholder="Search here " class="input rounded-3xl md:w-40 lg:w-80 md:h-10" />
+          <span class="absolute right-5 top-2"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></span>
         </div>
       </div>
     </nav>
     <!-- banner section -->
     <section class="lg:container mx-auto px-4 lg:px-0">
-      <div class="carousel lg:h-[600px] w-full  mx-auto rounded-lg ">
+      <div class="carousel md:h-[300px] lg:h-[600px] w-full  mx-auto rounded-lg ">
         <!-- 1st slide -->
         <div id="slide1" class="carousel-item relative w-full">
           <div class="hero " style="background-image: url(./images/banner1.png);">
@@ -151,8 +151,31 @@
 
       </div>
     </section>
-
-    
+    <!-- bonus section -->
+    <section class="container md:w-[600px]  lg:w-[1196px]  mx-auto hidden md:block">
+      <div class="relative md:-top-20 lg:-top-28 flex justify-between md:px-7 lg:px-12 md:py-4 lg:py-8 shadow-md bg-[#FFF] rounded-lg">
+        <div>
+          <img src="images/fruit1.png" alt="">
+          <h3 class="text-[#121212] font-medium text-center mt-2">Red Grapes</h3>
+        </div>
+        <div>
+          <img src="images/fruit2.png" alt="">
+          <h3 class="text-[#121212] font-medium text-center mt-2">Orange</h3>
+        </div>
+        <div>
+          <img src="images/fruit3.png" alt="">
+          <h3 class="text-[#121212] font-medium text-center mt-2">Mango</h3>
+        </div>
+        <div>
+          <img src="images/fruit4.png" alt="">
+          <h3 class="text-[#121212] font-medium text-center mt-2">Strawberry</h3>
+        </div>
+        <div>
+          <img src="images/fruit5.png" alt="">
+          <h3 class="text-[#121212] font-medium text-center mt-2">Pomegranate</h3>
+        </div>
+      </div>
+    </section>
   </header>
 
   <main>
