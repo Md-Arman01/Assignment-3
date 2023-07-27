@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fruit-Brust</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
   <!-- Daisy ui and tailwind link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,19 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-  <!-- custom tailwind -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            // 'btn-bg-primary': '#F85559',
-          }
-        }
-      }
-    }
-  </script>
+
   <style>
     .lato-font {
       font-family: 'Lato', sans-serif;
@@ -39,7 +28,7 @@
   <header>
     <!-- navber section -->
     <nav class="container mx-auto my-4 lg:my-8 md:px-4 lg:px-0">
-      <div class="navbar md:bg-[#F85559] lg:bg-[#F85559] rounded-[500px] lg:py-3 lg:px-6">
+      <div class="flex items-center gap-20 md:bg-[#F85559] lg:bg-[#F85559] rounded-[500px] md:py-3 md:px-6">
         <div class="navbar-start hidden lg:flex justify-between">
           <ul class="menu menu-horizontal px-1 text-[#FFF] font-medium">
             <li><a>Home</a></li>
@@ -48,12 +37,12 @@
             <li><a>All Fruits</a></li>
           </ul>
         </div>
-        <div class="navbar-start">
-          <div class="dropdown">
+        <div class="navbar-start w-full pl-4 md:pl-0 flex justify-between lg:justify-start">
+          <div class="dropdown dropdown-end order-1">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  rounded-box w-52">
@@ -63,11 +52,13 @@
               <li><a>All Fruits</a></li>
             </ul>
           </div>
-          <img class="w-7 lg:w-10 " src="images/logo.png" alt="">
-          <h1 class="text-lg lg:text-3xl text-[#121212] lg:text-[#FFF] font-extrabold ml-3">Fruit Burst</h1>
+          <div class="flex items-center lg:mx-auto">
+            <img class="w-7 lg:w-10 " src="images/logo.png" alt="">
+            <h1 class="text-xl lg:text-3xl text-[#121212] lg:text-[#FFF] font-extrabold ml-3">Fruit Burst</h1>
+          </div>
         </div>
         <!-- Search ber -->
-        <div class="relative hidden md:block">
+        <div class="relative hidden lg:block">
           <input type="text" placeholder="Search here " class="input rounded-3xl md:w-40 lg:w-80 md:h-10" />
           <span class="absolute right-5 top-2"><i class="fa-solid fa-magnifying-glass"
               style="color: #000000;"></i></span>
@@ -191,17 +182,19 @@
       </div>
     </section>
   </header>
+
   <!-- main section -->
   <main>
     <!-- Deal of the day section -->
     <section>
-      <div class="container mx-auto">
+      <div class="container mx-auto lg:mb-24">
         <!-- content -->
         <div class="lg:flex lg:justify-between items-center text-center md:text-left my-4 md:my-0">
           <div>
             <h1 class="text-[#121212] text-2xl md:text-5xl font-extrabold md:text-center lg:text-left">Deal of the day
             </h1>
-            <p class="text-[#555454] text-xs md:text-sm font-medium my-2 md:mt-4 space-y-2 md:text-center lg:text-left mx-auto w-60 lg:w-[550px]">
+            <p
+              class="text-[#555454] text-xs md:text-sm font-semibold my-2 md:mt-4 space-y-2 md:text-center lg:text-left mx-auto w-60 lg:w-[550px]">
               Contrary to popular belief, is not simply random text. It has roots in a piece of classical
               Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
@@ -249,7 +242,7 @@
             </figure>
             <h3 class="text-[#121212] font-bold">12.90$ - 18.85$</h3>
             <hr class="w-44 mx-auto">
-            <h6 class="text-[#555454] text-xs font-medium">Apples</h6>
+            <h6 class="text-[#555454] text-xs font-semibold">Apples</h6>
             <!-- star -->
             <div class="rating rating-sm rating-half flex justify-center">
               <input type="radio" name="rating-1" class="rating-hidden" />
@@ -306,7 +299,7 @@
             </figure>
             <h3 class="text-[#121212] font-bold">12.90$ - 18.85$</h3>
             <hr class="w-44 mx-auto">
-            <h6 class="text-[#555454] text-xs font-medium">Orange</h6>
+            <h6 class="text-[#555454] text-xs font-semibold">Orange</h6>
             <!-- star -->
             <div class="rating rating-sm rating-half flex justify-center">
               <input type="radio" name="rating-2" class="rating-hidden" />
@@ -363,7 +356,7 @@
             </figure>
             <h3 class="text-[#121212] font-bold">12.90$ - 18.85$</h3>
             <hr class="w-44 mx-auto">
-            <h6 class="text-[#555454] text-xs font-medium">Red Dragon</h6>
+            <h6 class="text-[#555454] text-xs font-semibold">Red Dragon</h6>
             <!-- star -->
             <div class="rating rating-sm rating-half flex justify-center">
               <input type="radio" name="rating-3" class="rating-hidden">
@@ -420,7 +413,7 @@
             </figure>
             <h3 class="text-[#121212] font-bold">12.90$ - 18.85$</h3>
             <hr class="w-44 mx-auto">
-            <h6 class="text-[#555454] text-xs font-medium">Banana</h6>
+            <h6 class="text-[#555454] text-xs font-semibold">Banana</h6>
             <!-- star -->
             <div class="rating rating-sm rating-half flex justify-center">
               <input type="radio" name="rating-4" class="rating-hidden" />
@@ -485,7 +478,8 @@
         <div class="hero-overlay bg-opacity-70 rounded-lg"></div>
         <div class="text-center text-neutral-content">
           <h1 class="text-[#FFF] text-2xl lg:text-5xl font-extrabold mt-5 md:mt-5 lg:mt-0">Meet the team section</h1>
-          <p class="text-[#FFF] text-xs lg:text-sm font-medium md:w-[600px] mx-auto mt-5 px-4 md:px-0">Contrary to popular belief, is
+          <p class="text-[#FFF] text-xs lg:text-sm font-medium md:w-[600px] mx-auto mt-5 px-4 md:px-0">Contrary to
+            popular belief, is
             not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
             2000 years old.</p>
           <!-- team images -->
@@ -559,95 +553,115 @@
     <!-- Why Choose Us section -->
     <section class="container mx-auto my-7 md:my-7 lg:my-20">
       <h1 class="text-[#121212] text-2xl lg:text-4xl font-extrabold text-center">Why Choose Us</h1>
-      <p class="text-[#555454] text-xs font-medium w-[300px] md:w-[450px] space-y-3 mx-auto text-center my-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+      <p class="text-[#555454] text-xs font-medium w-[300px] md:w-[450px] space-y-3 mx-auto text-center my-4">Contrary
+        to popular belief, is not simply random text. It has roots in a piece of classical
         Latin literature from 45 BC, making it over 2000 years old.</p>
-        <!-- container -->
-        <div class="flex gap-6 md:gap-6 lg:gap-0 flex-col md:flex-col lg:flex-row justify-between items-center">
-          <!-- left side content -->
-          <div class="space-y-8">
+      <!-- container -->
+      <div class="flex gap-6 md:gap-6 lg:gap-0 flex-col md:flex-col lg:flex-row justify-between items-center">
+        <!-- left side content -->
+        <div class="space-y-8">
 
-            <!-- team title 1 -->
-            <div class="flex flex-col md:flex-row gap-5">
-              <div>
-                <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full"><img src="images/group 1.png" alt=""></div>
-              </div>
-              <div class="space-y-2">
-                <h1 class="text-base font-extrabold text-center md:text-left">Dedicated Team</h1>
-                <div class="flex justify-center md:justify-start"> <hr class="border-black w-16"></div>
-                <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-left">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              </div>
+          <!-- team title 1 -->
+          <div class="flex flex-col md:flex-row gap-5">
+            <div>
+              <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full"><img src="images/group 1.png" alt=""></div>
             </div>
-            <!-- team title 2 -->
-            <div class="flex flex-col md:flex-row gap-5">
-              <div>
-                <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full"><img src="images/love 1.png" alt=""></div>
+            <div class="space-y-2">
+              <h1 class="text-base font-extrabold text-center md:text-left">Dedicated Team</h1>
+              <div class="flex justify-center md:justify-start">
+                <hr class="border-black w-16">
               </div>
-              <div class="space-y-2">
-                <h1 class="text-base font-extrabold text-center md:text-left">Fresh is Best</h1>
-                <div class="flex justify-center md:justify-start"> <hr class="border-black w-16"></div>
-                <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-left">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              </div>
+              <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-left">Professional employees are
+                there for you to pick the most amazing and fresh fruits.</p>
             </div>
-            <!-- team title 3 -->
-            <div class="flex flex-col md:flex-row gap-5">
-              <div>
-                <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full"><img src="images/gift-box 1.png" alt=""></div>
-              </div>
-              <div class="space-y-2">
-                <h1 class="text-base font-extrabold text-center md:text-left">Gift Certificates</h1>
-                <div class="flex justify-center md:justify-start"> <hr class="border-b-2 border-black w-16"></div>
-                <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-left">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              </div>
-            </div>
-
           </div>
-          <!-- center content  -->
-          <div class="flex justify-center order-first md:order-none">
-            <img class="md:w-[65%] px-4 md:px-0" src="images/whychoose1.png" alt="">
+          <!-- team title 2 -->
+          <div class="flex flex-col md:flex-row gap-5">
+            <div>
+              <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full"><img src="images/love 1.png" alt=""></div>
+            </div>
+            <div class="space-y-2">
+              <h1 class="text-base font-extrabold text-center md:text-left">Fresh is Best</h1>
+              <div class="flex justify-center md:justify-start">
+                <hr class="border-black w-16">
+              </div>
+              <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-left">Professional employees are
+                there for you to pick the most amazing and fresh fruits.</p>
+            </div>
           </div>
-          <!-- right side content -->
-          <div class="space-y-8">
+          <!-- team title 3 -->
+          <div class="flex flex-col md:flex-row gap-5">
+            <div>
+              <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full"><img src="images/gift-box 1.png" alt=""></div>
+            </div>
+            <div class="space-y-2">
+              <h1 class="text-base font-extrabold text-center md:text-left">Gift Certificates</h1>
+              <div class="flex justify-center md:justify-start">
+                <hr class="border-b-2 border-black w-16">
+              </div>
+              <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-left">Professional employees are
+                there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
 
-            <!-- team title 1 -->
-            <div class="flex flex-col md:flex-row gap-5 text-right">
-              <div class="space-y-2">
-                <h1 class="text-base font-extrabold text-center md:text-right">Integrated Supplier</h1>
-                <div class="flex justify-center md:justify-end"> <hr class="border-black w-16"></div>
-                <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              </div>
-              <div class="order-first md:order-none">
-                <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full "><img src="images/fruit 1.png" alt=""></div>
-              </div>
-            </div>
-            <!-- team title 2 -->
-            <div class="flex flex-col md:flex-row gap-5 text-right">
-              <div class="space-y-2">
-                <h1 class="text-base font-extrabold text-center md:text-right">Sustainable Practice</h1>
-                <div class="flex justify-center md:justify-end"> <hr class="border-black w-16"></div>
-                <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              </div>
-              <div class="order-first md:order-none">
-                <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full"><img src="images/ice-cream 1.png" alt=""></div>
-              </div>
-            </div>
-            <!-- team title 3 -->
-            <div class="flex flex-col md:flex-row gap-5 text-right">
-              <div class="space-y-2">
-                <h1 class="text-base font-extrabold text-center md:text-right">The Benefits Only</h1>
-                <div class="flex justify-center md:justify-end"> <hr class="border-b-2 border-black w-16"></div>
-                <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              </div>
-              <div class="order-first md:order-none">
-                <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full"><img src="images/like 1.png" alt=""></div>
-              </div>
-            </div>
+        </div>
+        <!-- center content  -->
+        <div class="flex justify-center order-first md:order-none">
+          <img class="md:w-[65%] px-4 md:px-0" src="images/whychoose1.png" alt="">
+        </div>
+        <!-- right side content -->
+        <div class="space-y-8">
 
+          <!-- team title 1 -->
+          <div class="flex flex-col md:flex-row gap-5 text-right">
+            <div class="space-y-2">
+              <h1 class="text-base font-extrabold text-center md:text-right">Integrated Supplier</h1>
+              <div class="flex justify-center md:justify-end">
+                <hr class="border-black w-16">
+              </div>
+              <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-right">Professional employees are
+                there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="order-first md:order-none">
+              <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full "><img src="images/fruit 1.png" alt=""></div>
+            </div>
+          </div>
+          <!-- team title 2 -->
+          <div class="flex flex-col md:flex-row gap-5 text-right">
+            <div class="space-y-2">
+              <h1 class="text-base font-extrabold text-center md:text-right">Sustainable Practice</h1>
+              <div class="flex justify-center md:justify-end">
+                <hr class="border-black w-16">
+              </div>
+              <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-right">Professional employees are
+                there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="order-first md:order-none">
+              <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full"><img src="images/ice-cream 1.png" alt=""></div>
+            </div>
+          </div>
+          <!-- team title 3 -->
+          <div class="flex flex-col md:flex-row gap-5 text-right">
+            <div class="space-y-2">
+              <h1 class="text-base font-extrabold text-center md:text-right">The Benefits Only</h1>
+              <div class="flex justify-center md:justify-end">
+                <hr class="border-b-2 border-black w-16">
+              </div>
+              <p class="text-xs font-medium w-48 md:w-64 mx-auto text-center md:text-right">Professional employees are
+                there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="order-first md:order-none">
+              <div class="bg-[#0f0f0f28] w-14 mx-auto p-5 rounded-full"><img src="images/like 1.png" alt=""></div>
+            </div>
           </div>
 
         </div>
 
+      </div>
+
     </section>
   </main>
+
   <!-- footer section -->
   <footer class="footer footer-center p-10  md:py-24 bg-[#121212] text-base-content rounded">
     <div class="flex">
@@ -655,13 +669,13 @@
       <h1 class="text-2xl lg:text-3xl text-[#FFF] font-extrabold ml-2 md:ml-3">Fruit Burst</h1>
     </div>
     <div class="flex flex-wrap justify-center gap-7 md:gap-14">
-      <a class="link link-hover text-[#FFF] font-semibold">Home</a> 
-      <a class="link link-hover text-[#FFF] font-semibold">About Us</a> 
-      <a class="link link-hover text-[#FFF] font-semibold">Shop</a> 
+      <a class="link link-hover text-[#FFF] font-semibold">Home</a>
+      <a class="link link-hover text-[#FFF] font-semibold">About Us</a>
+      <a class="link link-hover text-[#FFF] font-semibold">Shop</a>
       <a class="link link-hover text-[#FFF] font-semibold">All Fruits</a>
       <a class="link link-hover text-[#FFF] font-semibold">Support</a>
       <a class="link link-hover text-[#FFF] font-semibold">My Account</a>
-    </div> 
+    </div>
     <div>
       <div class="grid grid-flow-col gap-7">
         <a><i class="fa-brands fa-twitter text-2xl md:text-4xl" style="color: #ffffff;"></i></a>
@@ -670,7 +684,7 @@
         <a><i class="fa-brands fa-linkedin-in text-2xl md:text-4xl" style="color: #ffffff;"></i></a>
         <a><i class="fa-brands fa-instagram text-2xl md:text-4xl" style="color: #ffffff;"></i></a>
         <a><i class="fa-brands fa-apple text-2xl md:text-4xl" style="color: #ffffff;"></i></a>
-    </div> 
+      </div>
   </footer>
 </body>
 
